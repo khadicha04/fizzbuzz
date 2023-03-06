@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #0e131b;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+#toggle {
+  display: none;
+}
+.toggle {
+  cursor: pointer;
+  position: relative;
+  width: 120px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+.toggle i {
+  width: 50%;
+  line-height: 60px;
+  font-size: 30px;
+  text-align: center;
+  z-index: 1;
+}
+.toggle .ball {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  margin: 7.5px;
+  border-radius: 50%;
+  transition: 0.3s ease-out;
+}
+.light {
+  background-color: white;
+}
+.light .toggle {
+  background: linear-gradient(145deg, #e1e1e1, #fff);
+  box-shadow: 3px 3px 4px #e1e1e1, 3px 3px 4px #fff;
+}
+.light .toggle .bxs-sun {
+  color: #fafafa;
+}
+.light .toggle .bxs-moon {
+  color: #151d15;
+}
+.light .toggle .ball {
+  background-color: black;
+}
+
+.dark {
+  background: #151d2a;
+}
+.dark .toggle {
+  background: #151d2a;
+  box-shadow: 3px 3px 3px #0e131b, -3px -3px 3px #1c2739;
+}
+.dark .toggle .bxs-sun {
+  color: #fafafa;
+}
+.dark .toggle .bxs-moon {
+  color: #151d15;
+}
+.dark .toggle .ball {
+  background-color: #fafafa;
+  transform: translateX(60px);
+}
+.form {
+  padding: 20px;
+}
+.form__text {
+  color: #ff0000;
+  font-size: larger;
+  font-weight: bolder;
+  padding: 10px 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.form__input {
+  padding: 10px;
+  width: 200px;
+  height: 40px;
+  background: none;
+  border: #0e131b 3px solid;
+  transition: 0.2s;
+}
+.form__input:hover {
+  padding: 20px;
+}
+.form__input::placeholder {
+  color: #0e131b;
+}
+.form__btn {
+  cursor: pointer;
+  padding: 10px;
+  width: 100px;
+  height: 40px;
+  background: #0e131b;
+  color: white;
+  border: none;
+  transition: 0.2s;
+}
+.form__btn:hover {
+  color: #0e131b;
+  background: none;
+  border: #0e131b 3px solid;
+}
+.input-danger {
+  background-color: #ff0000;
+  color: white;
+}
+.input-success {
+  background-color: #00ff59;
+  color: white;
+}
+body {
+  background: #fff url("https://i.imgur.com/KheAuef.png") top left repeat-x;
+  font-family: "Alex Brush", cursive !important;
+}
+
+.page {
+  display: none;
+  padding: 0 0.5em;
+}
+.page h1 {
+  font-size: 2em;
+  line-height: 1em;
+  margin-top: 1.1em;
+  font-weight: bold;
+}
+.page p {
+  font-size: 1.5em;
+  line-height: 1.275em;
+  margin-top: 0.15em;
+}
+
+#loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(192, 192, 192, 0.5);
+  background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body {
+  background: #fff url("https://i.imgur.com/KheAuef.png") top left repeat-x;
+  font-family: "Alex Brush", cursive !important;
+}
+
+.page {
+  display: none;
+  padding: 0 0.5em;
+}
+
+#loading {
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(192, 192, 192, 0.5);
+  background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
